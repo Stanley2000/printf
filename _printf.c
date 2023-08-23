@@ -28,9 +28,9 @@ int _printf(const char *format, ...)
 			fmt++;
 			int i = 0;
 
-			while (printers[i].type_arg)
+			while (printers[i].type)
 			{
-				if (*fmt == *(printers[i].type_arg))
+				if (*fmt == *(printers[i].type))
 				{
 					printed_chars += printers[i].f(args, NULL, 0);
 					break;

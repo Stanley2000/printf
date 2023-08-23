@@ -18,7 +18,7 @@
 typedef struct printf
 {
 	char *type;
-	int(*F)(va_list, char *, unsigned int);
+	int(*f)(va_list, char *, unsigned int);
 
 } print_t;
 
